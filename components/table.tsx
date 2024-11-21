@@ -5,6 +5,7 @@ import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
 
 export default async function Table() {
+  
   let users
   let startTime = Date.now()
   try {

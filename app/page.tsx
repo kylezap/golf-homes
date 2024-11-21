@@ -19,7 +19,7 @@ export default function Home() {
         <ExpandingArrow />
       </Link>
       <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#4b4b4b] bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
-        Postgres on Vercel
+        Find your dream home on the green.
       </h1>
       <Suspense fallback={<TablePlaceholder />}>
         <Table />
@@ -72,7 +72,7 @@ export default function Home() {
       <div className="sm:absolute sm:bottom-0 w-full px-20 py-10 flex justify-between">
         <Link href="https://vercel.com">
           <Image
-            src="/vercel.svg"
+            src="/logo.svg"
             alt="Vercel Logo"
             width={100}
             height={24}
