@@ -1,11 +1,11 @@
 import { db, UsersTable } from '@/lib/drizzle'
-import { timeAgo } from '@/lib/utils'
+import { timeAgo } from '@/utils/timeAgo'
 import Image from 'next/image'
 import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
 
 export default async function Table() {
-  
+    
   let users
   let startTime = Date.now()
   try {

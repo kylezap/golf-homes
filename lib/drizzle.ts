@@ -18,6 +18,7 @@ export const UsersTable = pgTable(
     image: text('image').notNull(),
     createdAt: timestamp('createdAt').defaultNow().notNull(),
   },
+  // Add unique index on email
   (users) => {
     return {
       uniqueIdx: uniqueIndex('unique_idx').on(users.email),

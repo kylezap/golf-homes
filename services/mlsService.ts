@@ -7,6 +7,9 @@ dotenv.config();
 
 export async function syncPropertiesWithMLS() {
   try {
+    // Fetch properties from MLS API
+    // https://bridgedataoutput.com/docs/platform/API/bridge
+
     const response = await axios.get(
       `https://api.bridgedataoutput.com/api/v2/OData/test/Property?access_token=${process.env.MLS_API_KEY}`
     );
